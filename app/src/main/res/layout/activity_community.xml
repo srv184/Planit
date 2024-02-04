@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp"
+    tools:context=".community">
+
+
+    <ImageView
+        android:id="@+id/imageViewreg"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:padding="2dp"
+        android:background="#018C01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013"
+        tools:srcCompat="@tools:sample/avatars" />
+
+        <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="click"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewreg"
+        app:layout_constraintVertical_bias="0.944" />
+
+
+<!--        <ImageView-->
+<!--        android:id="@+id/pfpimage2"-->
+<!--        android:layout_width="90dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:padding="1dp"-->
+<!--        android:background="#018C01"-->
+<!--        android:layout_marginBottom="24dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh1"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.049"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/dividerh"-->
+<!--        app:layout_constraintVertical_bias="1.0"-->
+<!--        tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textname1"-->
+<!--        android:layout_width="160dp"-->
+<!--        android:layout_height="44dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:textColor="#018C01"-->
+<!--        android:hint="name"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh1"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.533"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.611" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:hint="last activity"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh1"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.406"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textname1"-->
+<!--        app:layout_constraintVertical_bias="0.166" />-->
+
+<!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:barrierDirection="top" />-->
+
+<!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:barrierDirection="top" />-->
+
+<!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:barrierDirection="top"-->
+<!--        tools:layout_editor_absoluteX="150dp"-->
+<!--        tools:layout_editor_absoluteY="258dp" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/dividerh1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="?android:attr/listDivider"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/textname2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.921" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/dividerh"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="?android:attr/listDivider"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/textname1"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.813" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/dividerv1"-->
+<!--        android:layout_width="1dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="?android:attr/listDivider"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh1"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.785"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/dividerh"-->
+<!--        app:layout_constraintVertical_bias="0.529" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/pfpimage3"-->
+<!--        android:layout_width="90dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:padding="1dp"-->
+<!--        android:background="#018C01"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.049"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/dividerh1"-->
+<!--        app:layout_constraintVertical_bias="0.5"-->
+<!--        tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textname2"-->
+<!--        android:layout_width="160dp"-->
+<!--        android:layout_height="44dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:textColor="#018C01"-->
+<!--        android:hint="name"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.533"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.76" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:hint="last activity"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.406"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textname2"-->
+<!--        app:layout_constraintVertical_bias="0.2" />-->
+
+<!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:barrierDirection="top" />-->
+
+<!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:barrierDirection="top" />-->
+
+<!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:barrierDirection="top"-->
+<!--        tools:layout_editor_absoluteX="150dp"-->
+<!--        tools:layout_editor_absoluteY="258dp" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/dividerh2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="?android:attr/listDivider"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/dividerv2"-->
+<!--        android:layout_width="1dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="?android:attr/listDivider"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.782"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/dividerh1"-->
+<!--        app:layout_constraintVertical_bias="0.511" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/pfpimage4"-->
+<!--        android:layout_width="90dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:padding="1dp"-->
+<!--        android:background="#018C01"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.049"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/dividerh2"-->
+<!--        app:layout_constraintVertical_bias="0.5"-->
+<!--        tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textname3"-->
+<!--        android:layout_width="160dp"-->
+<!--        android:layout_height="44dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:textColor="#018C01"-->
+<!--        android:hint="name"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.533"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.849" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView6"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:hint="last activity"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.406"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textname3"-->
+<!--        app:layout_constraintVertical_bias="0.17" />-->
+
+<!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:barrierDirection="top" />-->
+
+<!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:barrierDirection="top" />-->
+
+<!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:barrierDirection="top"-->
+<!--        tools:layout_editor_absoluteX="150dp"-->
+<!--        tools:layout_editor_absoluteY="258dp" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/dividerh3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="?android:attr/listDivider"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh4"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/dividerh2" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/dividerv3"-->
+<!--        android:layout_width="1dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="?android:attr/listDivider"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.785"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/dividerh2"-->
+<!--        app:layout_constraintVertical_bias="0.541" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/pfpimage5"-->
+<!--        android:layout_width="90dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:padding="1dp"-->
+<!--        android:background="#018C01"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh4"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.049"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/dividerh3"-->
+<!--        app:layout_constraintVertical_bias="0.5"-->
+<!--        tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textname4"-->
+<!--        android:layout_width="160dp"-->
+<!--        android:layout_height="44dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:textColor="#018C01"-->
+<!--        android:hint="name"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh4"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.533"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.885" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView8"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:hint="last activity"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh4"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.406"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textname4"-->
+<!--        app:layout_constraintVertical_bias="0.108" />-->
+
+<!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:barrierDirection="top" />-->
+
+<!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:barrierDirection="top" />-->
+
+<!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:barrierDirection="top"-->
+<!--        tools:layout_editor_absoluteX="150dp"-->
+<!--        tools:layout_editor_absoluteY="258dp" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/dividerh4"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="?android:attr/listDivider"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/dividerh2"-->
+<!--        app:layout_constraintVertical_bias="0.745" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/dividerv4"-->
+<!--        android:layout_width="1dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="?android:attr/listDivider"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh4"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.78"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/dividerh3"-->
+<!--        app:layout_constraintVertical_bias="0.517" />-->
+
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/streak2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="end"-->
+<!--        android:textSize="20dp"-->
+<!--        android:hint="@string/streaK"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+
+<!--        app:layout_constraintHorizontal_bias="0.932"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.216" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/streak3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="end"-->
+<!--        android:textSize="20dp"-->
+<!--        android:hint="@string/streaK"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.932"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/dividerh1"-->
+<!--        app:layout_constraintVertical_bias="0.454" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/streak4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="end"-->
+<!--        android:textSize="20dp"-->
+<!--        android:hint="@string/streaK"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.935"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/dividerh2"-->
+<!--        app:layout_constraintVertical_bias="0.474" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/streak5"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="end"-->
+<!--        android:textSize="20dp"-->
+<!--        android:hint="steak"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh4"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.92"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/dividerh3"-->
+<!--        app:layout_constraintVertical_bias="0.456" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButton1"-->
+<!--        android:layout_width="28dp"-->
+<!--        android:layout_height="27dp"-->
+<!--        android:backgroundTint="#006400"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh1"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.728"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/dividerh"-->
+<!--        app:layout_constraintVertical_bias="0.2"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_add"-->
+<!--        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButton2"-->
+<!--        android:layout_width="28dp"-->
+<!--        android:layout_height="27dp"-->
+<!--        android:backgroundTint="#006400"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.728"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/dividerh1"-->
+<!--        app:layout_constraintVertical_bias="0.2"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_add"-->
+<!--        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButton3"-->
+<!--        android:layout_width="28dp"-->
+<!--        android:layout_height="27dp"-->
+<!--        android:backgroundTint="#006400"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.728"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/dividerh2"-->
+<!--        app:layout_constraintVertical_bias="0.2"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_add"-->
+<!--        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButton4"-->
+<!--        android:layout_width="28dp"-->
+<!--        android:layout_height="27dp"-->
+<!--        android:backgroundTint="#006400"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dividerh4"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.728"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/dividerh3"-->
+<!--        app:layout_constraintVertical_bias="0.2"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_add"-->
+<!--        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <ImageView
+        android:id="@+id/pfp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:padding="1dp"
+        android:background="#018C01"
+        android:layout_gravity="start|center" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#018C01"
+        android:hint="name"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/streak"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:textColor="#018C01"
+        android:gravity="center_horizontal"
+        android:background="@drawable/flame"
+        android:layout_gravity="bottom|start"
+        android:hint="streak"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/connect"
+        android:layout_width="25dp"
+        android:layout_height="21dp"
+        android:layout_gravity="top|end"
+        android:backgroundTint="#018C01"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/lastactivity"
+        android:layout_width="140dp"
+        android:layout_height="15dp"
+        android:textColor="#018C01"
+        android:layout_gravity="bottom|end"
+        android:hint="last activity"
+        android:textSize="12dp" />
+
+
+</androidx.cardview.widget.CardView>

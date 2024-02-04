@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PLANIT</string>
+    <string name="checkbox">Waiting for Response…</string>
+    <string name="verify">Verify</string>
+    <string name="streak">Streak Upload</string>
+    <string name="upload">Upload</string>
+    <string name="verified">Verified</string>
+    <string name="pfp">pfp</string>
+    <string name="streaK">streak</string>
+</resources>
